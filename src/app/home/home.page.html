@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Dados
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<ion-title>Bem vindo ao nosso cadastro de livros</ion-title>
+<ion-text>Cadastre seus livros didaticos agora mesmo</ion-text>
+
+
+<ion-item>
+<ion-label position="floating">Livro</ion-label>
+<ion-input [(ngModel)]="titulo"></ion-input>
+</ion-item>
+
+
+<ion-item>
+<ion-label position="floating">Autor</ion-label>
+<ion-input [(ngModel)]="autor"></ion-input>
+</ion-item>
+
+
+<ion-item>
+<ion-label position="floating">Paginas</ion-label>
+<ion-input [(ngModel)]="paginas"></ion-input>
+</ion-item>
+
+<ion-button expand="block" (click)='Cadastrar()'>Confirmar para cadastro</ion-button>
+</ion-content>
